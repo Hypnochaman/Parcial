@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <!--Inicio del menu-->
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="imagenes/DnD-Symbol.png" alt="DnD-Symbol" width="100">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enemigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#">Unete a la aventura</a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!--Final del menu-->
+
+    <!--Comienzo del carrousel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagenes/Rashatart.png" class="d-block w-100" alt="Rashatart">
+            <div class="carousel-caption d-flex d-md-block">
+              <h5>Grandes aventuras por recorrer.</h5>
+              <p>Sumergete en la gran aventura de la "Odisea de Rashatart" y explora la gran cantidad de países y continentes misteriosos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/Corrupcion.jpg" class="d-block w-100" alt="Corrupcion">
+            <div class="carousel-caption d-flex d-md-block">
+              <h5>Enfrentate a enemigos con tu grupo. </h5>
+              <p>Forma un grupo y combate a las grandes amenzanas que intentaran eliminarte.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/Meme.jpeg" class="d-block w-100" alt="Meme">
+            <div class="carousel-caption d-flex d-md-block">
+              <h5>Y no lo olvides.</h5>
+              <p>Y por ultimo no olvides lo mas importante de esta gran aventura, ¡diviertete!</p>
+            </div>           
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Final del Carrousel-->
+
+      <!--Conoce a algunos personajes-->
+      <div class="text-center mx-1 my-2">
+        <div class="fs-5"> Conoce a algunos personajes</div>
+        <div class="fs-5"> de esta Historia</div>
+      </div>
+      <!--Final de conoce a algunos personajes-->
+
+       <!--Cartas de personajes-->
+       <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagenes/Yogg.jpg" class="card-img-top" alt="Yogg">
+            <div class="card-body">
+              <div>
+                <button type="button" class="btn btn-outline-info">Vivo</button>
+                <button type="button" class="btn btn-outline-info">Exiliado</button>
+              </div>
+              <h5 class="card-title">Yogg-Saron</h5>
+              <p class="card-text">Un caballero exiliado en busca de purgar toda la corrupción que hay en este mundo.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Clase: Exiliado de la escarcha</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagenes/Vetorik.jpg" class="card-img-top" alt="Vetorik">
+            <div class="card-body">
+              <div>
+                <button type="button" class="btn btn-outline-info">Vivo</button>
+                <button type="button" class="btn btn-outline-info">Mercenario</button>
+              </div>
+              <h5 class="card-title">Vetorik Scarmento</h5>
+              <p class="card-text">Un mercenario en busca de ganarse la vida a base de contratos y aventuras.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Clase: WarLord</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagenes/Elfman.jpg" class="card-img-top" alt="Elfman">
+            <div class="card-body">
+              <div>
+                <button type="button" class="btn btn-outline-info">Vivo</button>
+                <button type="button" class="btn btn-outline-info">Aventurero</button>
+              </div>
+              <h5 class="card-title">Elfman</h5>
+              <p class="card-text">Un Druida en busca de aventuras para complacer a su hermana menor y obsesionado con su diosa.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Clase: Druida Tanque</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Final de Cartas de personajes-->
+
+      <!--Grilla-->
+      <div class="row">
+        <div class="col-md">
+          <img src="Imagenes/Menethill.png" alt="Menethill" class="img-fluid">
+        </div>
+
+        <div class="col-md bg-dark text-light p-4"> 
+        <div>
+          Campaña numero 3: Ragnarok en el Yggdrasill.
+        </div>
+        <div class="p-4">
+          Sumergente en la aventura, la fria campaña de los nordicos y los enanos te espera, grandes aventuras por tierras congeladas llenas de clanes al cual tu puedes decidir a quien quieres unirte para definir el destino de esta campaña.
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-light">Conoce más sobre las demas campañas</button>
+
+        </div>
+      </div>
+       <!--Final de la grilla-->
+
+      <!--Conviertete en un aventurero-->
+      <div class="text-center mx-1 my-2">
+        <div class="fs-5"> Conviertete en un</div>
+        <div class="fs-5"> aventurero</div>
+        <div class="fs-5"> Registrate gratuitamente para formar parte del grupo de aventureros de Rashatar</div>
+      </div>
+       <!--Final de conviertete en un aventurero-->
+
+       <div class="container my-3 text-center">
+        <div>
+            <form action="server/server.html" method="post">
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre del personaje">
+                    </div>
+                    <div class="col-md mb-3">
+                        <input type="text" name="ape" id="ape" class="form-control" placeholder="Clase del personaje"                        >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="¿Que experiencia esperas de este roleplay?"                        ></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                  <button type="button" class="btn btn-success">Enviar formulario</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
